@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.my-80{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+}
+.round{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: round-rotation 5s ease-in-out infinite alternate;
+}
+@keyframes round-rotation {
+    from{
+        transform: rotate(0) scale(0);
+        background-color: red;
+    }
+    to{
+        transform: rotate(360deg) scale(1);
+        background-color: blue;
+    }
+}
+.rotate{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    margin: 0 auto;
+    animation: rotate 5s ease infinite alternate-reverse;
+}
+@keyframes rotate {
+    from{
+        transform: rotate(0) scale(1);
+    }
+    to{
+        transform: rotate(180deg) scale(0.5);
+    } 
+}
+.transform{
+    width: 150px;
+    height: 150px;
+    border: 2px solid;
+    border-radius: 50%;
+    background-color: purple;
+    margin: 0 auto;
+    animation: transform 5s ease-out infinite alternate;
+}
+@keyframes transform {
+    from{
+        transform: translateX(-50%) rotate(0);
+        background-color: red;
+    }
+    to{
+        transform: translateX(50%) rotate(360deg);
+        background-color: aqua;
+    }
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    animation: box-pose 5s ease infinite alternate;
+    position: relative;
+}
+@keyframes box-pose{
+    0%{
+        background-color:red; left:0px; top:0px;
+    }
+    25%{
+        background-color:yellow; 
+        left:200px; 
+        top:0px;
+    }
+    50%{
+        background-color:blue; 
+        left:200px; 
+        top:200px;
+    }
+    75%{
+        background-color:green; 
+        left:0px; 
+        top:200px;
+    }
+    100%{
+        background-color:red; 
+        left:0px; 
+        top:0px;
+    }
+}
+.shape{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    margin: 0 auto;
+    animation: shape 5s infinite alternate;
+}
+@keyframes shape {
+    from{
+        border-radius: 0;
+        transform: rotate(0);
+        background-color: chocolate;
+    }
+    to{
+        border-radius: 50%;
+        transform: rotate(360deg);
+        background-color: coral;
+    }
+}
+.loader{
+    width: 220px;
+    height: 20px;
+    background-color: #f4f4f5;
+    margin: 0 auto;
+}
+.animate-loader{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    animation: loader 5s ease infinite alternate;
+}
+@keyframes loader {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(200px);
+    }
+}
